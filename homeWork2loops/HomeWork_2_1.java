@@ -10,7 +10,7 @@ class HomeWork_2_1 {
         int y = 1;
         String resultString = String.valueOf(y);
         for (int i = 2; i <= a; i++) {
-            resultString =resultString + " * " + i;
+            resultString = resultString + " * " + i;
             y = i * y;
         }
         System.out.println(resultString + " = " + y);

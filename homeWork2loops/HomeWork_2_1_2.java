@@ -6,14 +6,11 @@ class HomeWork_2_1_2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число");
         String number = scanner.nextLine();
-        int a = Integer.parseInt(number);
-        Integer aInt = a;
-        String str1 = aInt.toString();
-        String resultString = String.valueOf(str1);
-
-      //  for (int i = 2; i <= a; i++) {
-        //  resultString =resultString + " * " + i;
-        //   y = i * y;
-        System.out.print(" "+ resultString);
+        char[] charArray = number.toCharArray();
+        int[] intArray = new int[charArray.length];
+        for (int i = 0; i < charArray.length; i++) {
+            intArray[i] = Integer.parseInt(String.valueOf(charArray[i]));
+            for (int i = 0; i < charArray.length; i++)
         }
     }
+}
