@@ -10,7 +10,19 @@ class HomeWork_2_1_2 {
         int[] intArray = new int[charArray.length];
         for (int i = 0; i < charArray.length; i++) {
             intArray[i] = Integer.parseInt(String.valueOf(charArray[i]));
-            for (int i = 0; i < charArray.length; i++)
         }
+        for (int i = 0; i < intArray.length; i++) {
+            int intItem = intArray[i];
+            if (i == 0) {
+                System.out.print(intItem);
+            } else {
+                System.out.print(" * " + intItem);
+            }
+        }
+        int resultValue = 1;
+        for (int intItem : intArray) {
+            resultValue *= intItem;
+        }
+        System.out.println(" = " + resultValue);
     }
 }
